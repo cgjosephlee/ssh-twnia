@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ssh-twnia"
+version = "0.1.0"
+description = ""
+authors = ["Joseph Lee <cgjosephlee@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ssh_twnia.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyotp = "^2.9.0"
+pexpect = "^4.8.0"
+
+[tool.poetry.scripts]
+ssh-twnia = "ssh_twnia:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
